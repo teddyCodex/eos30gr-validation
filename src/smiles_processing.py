@@ -3,13 +3,13 @@ from rdkit import Chem
 from standardiser import standardise
 
 
-def standardise_smiles(smiles):
+def standardise_smiles(smiles: list):
     mols = []
     for smi in smiles:
         try:
             mol = Chem.MolFromSmiles(smi)
         except:
-            mol=np.nan
+            mol = np.nan
         mols += [mol]
     st_mols = []
     for mol in mols:
@@ -27,7 +27,7 @@ def standardise_smiles(smiles):
             try:
                 st_smi = Chem.MolToSmiles(st_mol)
             except:
-                st_smi=np.nan
+                st_smi = np.nan
         else:
             st_smi = np.nan
         st_smiles += [st_smi]
