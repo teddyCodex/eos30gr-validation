@@ -9,9 +9,9 @@ This EOS30GR Validation Toolkit provides a suite for validating and analyzing th
 - **Data**: This folder contains three key datasets for the validation process:
   - `predictions.csv`: Contains prediction scores from the model for various compounds.
   - `smiles_to_inchikeys_conversion.csv`: Offers a mapping between SMILES representations and InChIKeys of compounds.
-  - `reference_library.csv`: A reference dataset against which the model's predictions are validated.
-
+  - `reference_library.csv`: A reference dataset containing 1000 SMILES strings.
 - **Notebooks**: Jupyter notebooks provided for detailed analysis and validation steps:
+
   - `00_model_bias.ipynb`: Investigates potential biases in the model's predictions.
   - `01_model_reproducibility.ipynb`: Ensures the reproducibility of the model's predictions.
   - `02_external_validation.ipynb`: Conducts validation against external datasets.
@@ -21,7 +21,8 @@ This EOS30GR Validation Toolkit provides a suite for validating and analyzing th
 
 ## Requirements
 
-The toolkit requires the following Python libraries: 
+The toolkit requires the following Python libraries:
+
 - RDKit
 - pandas
 - numpy
