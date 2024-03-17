@@ -4,6 +4,8 @@
 
 This EOS30GR Validation Toolkit provides a suite for validating and analyzing the performance and bias of chemical compound prediction models. Designed with reproducibility and robustness in mind, this toolkit offers datasets, notebooks for analysis, and source code for processing chemical compound data.
 
+**Model link** - [eos30gr](https://github.com/ersilia-os/eos30gr)
+
 ## Contents
 
 - **Data**: This folder contains three key datasets for the validation process:
